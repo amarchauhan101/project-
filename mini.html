@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./mini.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="left">
+          <ul class="leftlinkcnt">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </div>
+
+        <div class="center">
+          <h1>Solus</h1>
+        </div>
+
+        <div class="right">
+          <ul class="rightlinkcnt">
+            <li><a href="#">Therapist</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <button class="menu-toggle">☰</button>
+      </nav>
+    </header>
+
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const leftMenu = document.querySelector(".left");
+      const rightMenu = document.querySelector(".right");
+
+      toggle.addEventListener("click", () => {
+        leftMenu.classList.toggle("active");
+        rightMenu.classList.toggle("active");
+      });
+    </script>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>
+            Support for Your<br />
+            <span>Mental Well-being</span>
+          </h1>
+
+          <p>
+            Connect with licensed therapists, counselors, and wellness coaches
+            to support your journey.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#" class="btn-primary">Get Started</a>
+            <a href="#" class="btn-secondary">Learn More</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="assets/images/hero-illustration.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+      <div class="container">
+        <h2>Your Path to Well-Being</h2>
+
+        <div class="service-grid">
+          <div class="card">
+            <h3>Mindfulness</h3>
+            <p>Guided practices to stay present and calm.</p>
+          </div>
+
+          <div class="card">
+            <h3>Therapy</h3>
+            <p>Professional support tailored to you.</p>
+          </div>
+
+          <div class="card">
+            <h3>Resources</h3>
+            <p>Tools and articles for mental health.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+
+        <details>
+          <summary>How does Solus help?</summary>
+          <p>We provide mental wellness tools and professional support.</p>
+        </details>
+
+        <details>
+          <summary>Is my data safe?</summary>
+          <p>Yes, we follow strict privacy standards.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2026 Solus. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
